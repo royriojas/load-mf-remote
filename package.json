@@ -1,6 +1,6 @@
 {
   "name": "load-mf-remote",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple loader for a module federation remote",
   "main": "index.js",
   "type": "module",
@@ -25,9 +25,7 @@
   "keywords": [],
   "author": "royriojas",
   "license": "MIT",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "prettier": "3.3.3",
     "@eslint/js": "^9.8.0",
