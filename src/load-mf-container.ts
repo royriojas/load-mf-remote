@@ -27,7 +27,7 @@ const _loadModuleFederatedContainer = async (
     await __webpack_init_sharing__(scope);
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    container = (window as any)[name] as WebpackContainer;
+    container = (await (window as any)[name]) as WebpackContainer;
 
     if (!container || !container.init) {
       throw new Error(`container in ${name} does not expose init method`);
