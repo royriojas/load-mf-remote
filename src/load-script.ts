@@ -1,12 +1,12 @@
 import { ErrorOrResult } from "./types";
 
 export interface ScriptTagsCache<T> {
-  [key: string]: PromiseWithResolvers<T> | undefined;
+  [key: string]: Promise<T> | undefined;
 }
 
 const scriptsCache: ScriptTagsCache<HTMLScriptElement> = {};
 
-const _loadScript = (src: string): PromiseWithResolvers<HTMLScriptElement> => {
+const _loadScript = (src: string): Promise<HTMLScriptElement> => {
   if (scriptsCache[src]) {
     return scriptsCache[src];
   }
@@ -32,9 +32,9 @@ const _loadScript = (src: string): PromiseWithResolvers<HTMLScriptElement> => {
 
   doc.head.appendChild(script);
 
-  scriptsCache[src] = deferred;
+  scriptsCache[src] = deferred.promise;
 
-  return deferred;
+  return deferred.promise;
 };
 
 export const loadScript = async (src: string): Promise<ErrorOrResult<HTMLScriptElement>> => {
