@@ -2,7 +2,12 @@
   "name": "load-mf-remote",
   "version": "0.1.0",
   "description": "A simple loader for a module federation remote",
-  "main": "index.js",
+  "main": "dist/load-mf-remote.js",
+  "module": "dist/load-mf-remote.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite build --watch",
