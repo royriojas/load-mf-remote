@@ -1,6 +1,6 @@
 {
   "name": "load-mf-remote",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple loader for a module federation remote",
   "main": "dist/load-mf-remote.js",
   "module": "dist/load-mf-remote.js",
