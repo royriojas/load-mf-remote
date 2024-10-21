@@ -2,12 +2,19 @@
   "name": "load-mf-remote",
   "version": "0.1.1",
   "description": "A simple loader for a module federation remote",
-  "main": "dist/load-mf-remote.js",
-  "module": "dist/load-mf-remote.js",
-  "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist/**/*"
   ],
+  "main": "./dist/load-mf-remote.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/load-mf-remote.js",
+  "exports": {
+    ".": {
+      "import": "./dist/load-mf-remote.js",
+      "require": "./dist/load-mf-remote.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "type": "module",
   "scripts": {
     "dev": "vite build --watch",
