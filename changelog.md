@@ -1,5 +1,10 @@
 
 # load-mf-remote - Changelog
+## v0.1.3
+- **Bug Fixes**
+  - wait for the container to be correctly initialized - [92e9ec0]( https://github.com/royriojas/load-mf-remote/commit/92e9ec0 ), [Roy Riojas](https://github.com/Roy Riojas), 21/10/2024 04:58:05
+
+    
 ## v0.1.2
 - **Bug Fixes**
   - correctly export main module - [ec0d0fe]( https://github.com/royriojas/load-mf-remote/commit/ec0d0fe ), [Roy Riojas](https://github.com/Roy Riojas), 21/10/2024 04:47:36
