@@ -8,7 +8,7 @@ const scriptsCache: ScriptTagsCache<HTMLScriptElement> = {};
 
 const _loadScript = (src: string): PromiseWithResolvers<HTMLScriptElement> => {
   if (scriptsCache[src]) {
-    return scriptsCache[src]!;
+    return scriptsCache[src];
   }
 
   const deferred = Promise.withResolvers<HTMLScriptElement>();
