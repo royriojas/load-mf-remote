@@ -1,0 +1,47 @@
+{
+  "name": "load-mf-remote",
+  "version": "0.0.1",
+  "description": "A simple loader for a module federation remote",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "tsc": "tsc --noEmit",
+    "verify": "npm run lint && npm run tsc",
+    "test": "bun test",
+    "lint": "eslint ./src",
+    "changelog": "changelogx -f markdown -o ./changelog.md",
+    "do-changelog": "npm run changelog && git add ./changelog.md && git commit -m 'DOC: Generate changelog' --no-verify",
+    "install-hooks": "changelogx install-hook",
+    "pre-v": "npm run verify",
+    "post-v": "npm run do-changelog && git push --no-verify && git push --tags --no-verify",
+    "bump-major": "npm run pre-v && npm version major -m 'BLD: Release v%s' && npm run post-v",
+    "bump-minor": "npm run pre-v && npm version minor -m 'BLD: Release v%s' && npm run post-v",
+    "bump-patch": "npm run pre-v && npm version patch -m 'BLD: Release v%s' && npm run post-v",
+    "bump-prerelease": "npm run pre-v && npm version prerelease -m 'BLD: Release v%s' && npm run post-v",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "royriojas",
+  "license": "MIT",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "prettier": "3.3.3",
+    "@eslint/js": "^9.8.0",
+    "eslint": "9.10.0",
+    "globals": "^15.9.0",
+    "@types/bun": "1.0.12",
+    "typescript": "5.6.3",
+    "typescript-eslint": "^8.0.0",
+    "vite-plugin-dts": "4.2.1",
+    "vite": "^5.4.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "vite-tsconfig-paths": "^5.0.1",
+    "ajv": "8.17.1",
+    "changelogx": "5.0.6"
+  }
+}
