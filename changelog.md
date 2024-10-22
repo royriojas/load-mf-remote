@@ -1,5 +1,10 @@
 
 # load-mf-remote - Changelog
+## v0.1.6
+- **Bug Fixes**
+  - fix getModule types - [2b4c4dc]( https://github.com/royriojas/load-mf-remote/commit/2b4c4dc ), [Roy Riojas](https://github.com/Roy Riojas), 22/10/2024 01:28:18
+
+    
 ## v0.1.5
 - **Other changes**
   - update readme - [fda7438]( https://github.com/royriojas/load-mf-remote/commit/fda7438 ), [Roy Riojas](https://github.com/Roy Riojas), 21/10/2024 19:44:52
