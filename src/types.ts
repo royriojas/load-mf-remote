@@ -7,4 +7,4 @@ export type WebpackContainer = {
   get: (moduleName: string) => Promise<() => unknown>;
 };
 
-export type GetModule<T> = (name: string) => Promise<T>;
+export type GetModule = <T>(name: string) => Promise<T>;
