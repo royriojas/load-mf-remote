@@ -1,5 +1,10 @@
 
 # load-mf-remote - Changelog
+## v0.1.5
+- **Other changes**
+  - update readme - [fda7438]( https://github.com/royriojas/load-mf-remote/commit/fda7438 ), [Roy Riojas](https://github.com/Roy Riojas), 21/10/2024 19:44:52
+
+    
 ## v0.1.4
 - **Bug Fixes**
   - properly deal with the resolver method - [63952c2]( https://github.com/royriojas/load-mf-remote/commit/63952c2 ), [Roy Riojas](https://github.com/Roy Riojas), 21/10/2024 05:20:57
