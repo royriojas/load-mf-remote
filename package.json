@@ -1,6 +1,6 @@
 {
   "name": "load-mf-remote",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "A simple loader for a module federation remote",
   "files": [
     "dist/**/*"
