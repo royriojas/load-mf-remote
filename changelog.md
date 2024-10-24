@@ -1,5 +1,10 @@
 
 # load-mf-remote - Changelog
+## v0.2.0
+- **Features**
+  - export types and and helpers from loadMFRemote - [a0fc754]( https://github.com/royriojas/load-mf-remote/commit/a0fc754 ), [Roy Riojas](https://github.com/Roy Riojas), 24/10/2024 01:02:42
+
+    
 ## v0.1.6
 - **Bug Fixes**
   - fix getModule types - [2b4c4dc]( https://github.com/royriojas/load-mf-remote/commit/2b4c4dc ), [Roy Riojas](https://github.com/Roy Riojas), 22/10/2024 01:28:18
